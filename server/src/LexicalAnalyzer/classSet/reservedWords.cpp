@@ -11,16 +11,16 @@ void reservedWords::load_rw()//加载保留字表,格式为blz[i] = 保留字i
     string s = "";
     while (in_file >> s)
     {
-        this->reserved_words.push_back(s);
+        this->rw.push_back(s);
     }
-    this->start_symbol = (int)this->reserved_words.size();
+    this->start_symbol = (int)this->rw.size();
 
     in_file.close();
     in_file.open("../inFiles/Symbol.in");//符号表源文件,第i个字符串为符号i,包括算符和界符
 
     while (in_file >> s)
     {
-        this->reserved_words.push_back(s);
+        this->rw.push_back(s);
     }
     in_file.close();
 
@@ -35,6 +35,17 @@ void reservedWords::load_rw()//加载保留字表,格式为blz[i] = 保留字i
 
     
 }
+
+int reservedWords::get_start_symbol()
+{
+    return this->start_symbol;
+}
+
+void reservedWords::set_start_symbol(int start_symbol)
+{
+    this->start_symbol = start_symbol;
+}
+
 
 reservedWords::reservedWords(/* args */)
 {

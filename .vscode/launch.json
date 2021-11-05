@@ -6,7 +6,7 @@
             "type": "cppdbg",                      
             "request": "launch",                   
 
-            "program": "${workspaceFolder}\\sever\\out\\${fileBasenameNoExtension}.exe",  //需要运行/调试的是当前打开文件的目录中，名字和当前文件相同，但扩展名为exe的程序。和tasks.json中-o后面的目录一样的
+            "program": "${workspaceFolder}\\server\\out\\${fileBasenameNoExtension}.exe",  //需要运行/调试的是当前打开文件的目录中，名字和当前文件相同，但扩展名为exe的程序。和tasks.json中-o后面的目录一样的
             "args": [],                    
             "stopAtEntry": false,           //设为true时程序将暂停在程序入口处（即停止main函数开始），一般设置为false    
             "cwd": "${workspaceFolder}\\out", //调试程序时的工作目录 。out对应工程目录下的out文件夹
