@@ -1,8 +1,11 @@
 #ifndef LEXICALANALYZER_H
 #define  LEXICALANALYZER_H
 
+#include<iostream>
 #include "reservedWords.h"
 #include "defs.h"
+using namespace std;
+
 
 class lexicalAnalyzer
 {
