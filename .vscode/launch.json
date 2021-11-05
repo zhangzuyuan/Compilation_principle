@@ -1,0 +1,28 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "g++.exe",                     
+            "type": "cppdbg",                      
+            "request": "launch",                   
+
+            "program": "${workspaceFolder}\\sever\\out\\${fileBasenameNoExtension}.exe",  //需要运行/调试的是当前打开文件的目录中，名字和当前文件相同，但扩展名为exe的程序。和tasks.json中-o后面的目录一样的
+            "args": [],                    
+            "stopAtEntry": false,           //设为true时程序将暂停在程序入口处（即停止main函数开始），一般设置为false    
+            "cwd": "${workspaceFolder}\\out", //调试程序时的工作目录 。out对应工程目录下的out文件夹
+            "environment": [],              //针对调试的程序，要添加到环境中的环境变量
+            "externalConsole": true,        //调试时是否显示外置控制台窗口（大黑框），一般设置为true显示控制台   
+            "internalConsoleOptions": "neverOpen",   //可以没有
+            "MIMode": "gdb",                // VSCode要使用的调试工具or指示VS代码将连接到的调试器
+            "miDebuggerPath": "D:\\MinGW\\MinGW\\bin\\gdb.exe",   // miDebugger的路径，注意这里要与MinGw的路径对应 当未指定时，它将搜索操作系统的PATH变量来寻找调试器
+            "setupCommands": [
+                {
+                    "description": "为 gdb 启用整齐打印",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "g++.exe build active file"  // 调试会话开始前执行的任务，一般为编译程序，c++为g++, c为gcc 这个名字一定要跟tasks.json中的任务名字大小写一致
+        }
+    ]
+}
