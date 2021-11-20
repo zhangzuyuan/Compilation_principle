@@ -1,0 +1,51 @@
+{
+  "name": "zzyOnlineIDE",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "start:dev": "nodemon -r dotenv/config --delay 1 --ext js --watch ./build ./bin/start",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode=development",
+    "build:prod": "webpack --mode=production",
+    "build:watch": "webpack --mode=development --watch"
+  },
+  "author": "zzy",
+  "license": "ISC",
+  "keywords": [],
+  "description": "",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.5",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^3.2.1",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "babel-polyfill": "^6.26.0",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "dedent": "^0.7.0",
+    "ejs": "^2.6.2",
+    "express": "~4.16.1",
+    "highlight.js": "^9.16.2",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1",
+    "prop-types": "^15.7.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-superagent": "^1.1.1",
+    "style": "0.0.3",
+    "style-loader": "^1.0.1",
+    "superagent": "^5.1.2",
+    "webpack": "^4.41.2",
+    "webpack-node-externals": "^1.7.2"
+  }
+}
