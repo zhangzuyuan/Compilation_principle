@@ -7,14 +7,14 @@
             "args": [
                 "-g",    //生成和调试有关的信息
                 "-Wall", // 开启额外警告 
-                "${workspaceFolder}\\server\\src\\*.cpp",  //当前工作空间下文件夹source目录名下的所有cpp文件。 source对应工程目录下的source文件夹名字，可自行修改   
-                "${workspaceFolder}\\server\\src\\LexicalAnalyzer\\*.cpp",
-                "${workspaceFolder}\\server\\src\\LexicalAnalyzer\\classSet\\*.cpp",
-                "${workspaceFolder}\\server\\src\\Parser\\*.cpp",
-                "${workspaceFolder}\\server\\src\\Parser\\classSet\\*.cpp",
-                "-I","${workspaceFolder}\\server\\include",      // 参数-I 和工程路径 指明了项目中要引用的非标准头文件的位置。 include对应工程目录下的include文件夹名字，可自行修改                   
+                "${workspaceFolder}\\zzyOnlineIDE\\public\\compiler\\src\\*.cpp",  //当前工作空间下文件夹source目录名下的所有cpp文件。 source对应工程目录下的source文件夹名字，可自行修改   
+                "${workspaceFolder}\\zzyOnlineIDE\\public\\compiler\\src\\LexicalAnalyzer\\*.cpp",
+                "${workspaceFolder}\\zzyOnlineIDE\\public\\compiler\\src\\LexicalAnalyzer\\classSet\\*.cpp",
+                "${workspaceFolder}\\zzyOnlineIDE\\public\\compiler\\src\\Parser\\*.cpp",
+                "${workspaceFolder}\\zzyOnlineIDE\\public\\compiler\\src\\Parser\\classSet\\*.cpp",
+                "-I","${workspaceFolder}\\zzyOnlineIDE\\public\\compiler\\include",      // 参数-I 和工程路径 指明了项目中要引用的非标准头文件的位置。 include对应工程目录下的include文件夹名字，可自行修改                   
                 "-o",                      
-                "${workspaceFolder}\\server\\out\\${fileBasenameNoExtension}.exe", //指定输出的文件名为out，默认a.exe。out对应工程目录下的out文件夹名字，可自行修改 
+                "${workspaceFolder}\\zzyOnlineIDE\\public\\compiler\\out\\${fileBasenameNoExtension}.exe", //指定输出的文件名为out，默认a.exe。out对应工程目录下的out文件夹名字，可自行修改 
                 "-std=c++17",                                      //使用c++17标准编译
                 "-finput-charset=UTF-8",                           //输入编译器默认文本编码 默认为utf-8
                 "-fexec-charset=GB18030",                          //输出exe文件编码 

@@ -1,0 +1,21 @@
+.view_table {
+    display: flex;
+    
+    height: 80vh;
+    width: 100vw;
+}
+
+.view_item {
+    width: 30vw;
+    border: 1px;
+    overflow-x: auto;
+    overflow-y: auto;
+}
+
+.activeted{
+    color:#fff;
+    background: #f60;
+}
+.activeted a{
+    color: #fff;
+}

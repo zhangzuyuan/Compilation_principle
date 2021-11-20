@@ -1,0 +1,31 @@
+.code_selected {
+    background-color: #e5efe5;
+    border:1px solid #b9b9b9
+}
+.code_muti_selected {
+    background-color: #add6ff;
+}
+
+
+.blz {
+    color: blue;
+}
+
+.fh {
+    color: black;
+}
+
+.bsf {
+    color: #001080;
+}
+
+.cl {
+    color: #a31515;
+}
+.if, .while, .do, .then{
+    color: #af00db
+}
+
+.read, .write{
+    color: #795e26
+}
