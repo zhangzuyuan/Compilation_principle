@@ -12,24 +12,24 @@
 
 ### 前端部分 client
 
-├─components
-│  ├─lexical
-│  │  ├─Eys
-│  │  └─Table
-│  ├─parser
-│  │  ├─Code
-│  │  └─Tree
-│  ├─public
-│  │  └─Code
-│  └─run
-│      ├─Code
-│      └─State
-├─lib
-└─views
-    ├─index
-    ├─lexical
-    ├─parser
-    └─run
+    ├─components
+    │  ├─lexical
+    │  │  ├─Eys
+    │  │  └─Table
+    │  ├─parser
+    │  │  ├─Code
+    │  │  └─Tree
+    │  ├─public
+    │  │  └─Code
+    │  └─run
+    │      ├─Code
+    │      └─State
+    ├─lib
+    └─views
+        ├─index
+        ├─lexical
+        ├─parser
+        └─run
 
 #### 说明
     共有四个界面: index，lexical，parser，run。
@@ -46,10 +46,10 @@
 
 ### 后端部分 server
 
-├─models
-│  └─receive
-├─routes
-└─views
+    ├─models
+    │  └─receive
+    ├─routes
+    └─views
 
 #### 说明
     当服务器收到前端代码将其保存在source.code中，然后执行exe文件（这里需要顺序执行，折磨死我了）
@@ -58,21 +58,21 @@
 
 ### 编译器部分 public/compiler
 
-├─ansFiles
-├─errFiles
-├─include
-├─inFiles
-├─jsonFiles
-├─lib
-├─out
-├─output
-├─source
-├─src
-│  ├─LexicalAnalyzer
-│  │  └─classSet
-│  └─Parser
-│      └─classSet
-└─tableFiles
+    ├─ansFiles
+    ├─errFiles
+    ├─include
+    ├─inFiles
+    ├─jsonFiles
+    ├─lib
+    ├─out
+    ├─output
+    ├─source
+    ├─src
+    │  ├─LexicalAnalyzer
+    │  │  └─classSet
+    │  └─Parser
+    │      └─classSet
+    └─tableFiles
 
 #### 项目框架
 
