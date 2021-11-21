@@ -78,5 +78,13 @@
     这是生成了相关指令后的程序运行界面，可以一步步的运行程序
 ![image](https://github.com/zhangzuyuan/Compilation_principle/blob/master/image/run.png)
 
+
+## 未来改进地方：
+    1.跳转需要更自然
+    2.需要设计ui使之更美观
+    3.编译器有些地方逻辑不是很好，还需要改进
+    4.布局需要更合理
+    ....
+
 ## 致谢:
     xczhw 的帮助和设计思路的提供。
