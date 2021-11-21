@@ -11,24 +11,68 @@
 ## 项目结构：
 
 ### 前端部分 client
+
+├─components
+│  ├─lexical
+│  │  ├─Eys
+│  │  └─Table
+│  ├─parser
+│  │  ├─Code
+│  │  └─Tree
+│  ├─public
+│  │  └─Code
+│  └─run
+│      ├─Code
+│      └─State
+├─lib
+└─views
+    ├─index
+    ├─lexical
+    ├─parser
+    └─run
+
+#### 说明
     共有四个界面: index，lexical，parser，run。
     index界面是写代码的界面
     lexical是显示词法分析的界面
     parser是显示语法分析的界面
     run 是生成的指令运行的界面
 
-#### views：
+##### views：
     是每个界面的class 负责显示不同界面 
 
-#### component：
+##### component：
     是对应每个界面的组件
 
 ### 后端部分 server
+
+├─models
+│  └─receive
+├─routes
+└─views
+
+#### 说明
     当服务器收到前端代码将其保存在source.code中，然后执行exe文件（这里需要顺序执行，折磨死我了）
 
 #### 
 
-### 编译器部分
+### 编译器部分 public/compiler
+
+├─ansFiles
+├─errFiles
+├─include
+├─inFiles
+├─jsonFiles
+├─lib
+├─out
+├─output
+├─source
+├─src
+│  ├─LexicalAnalyzer
+│  │  └─classSet
+│  └─Parser
+│      └─classSet
+└─tableFiles
 
 #### 项目框架
 
