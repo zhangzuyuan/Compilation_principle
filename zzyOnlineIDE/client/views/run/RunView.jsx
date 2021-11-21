@@ -97,6 +97,82 @@ class ViewTable extends React.Component {
                     P = I.a;
                 break;
             case "OPR":
+                switch (I.a) {
+                    case opr_table["return"]:
+                        if (stack[B] == -1) {
+                            shut_down = true;
+                            break;
+                        }
+                        T = B;
+                        P = stack[B + 2];
+                        B = stack[B + 1];
+                        break;
+                    case opr_table["read"]:
+                        if (buf_ptr >= buffer.length) {
+                            alert("等待输入字符");
+                            P--;
+                        } else
+                            stack[T++] = buffer[buf_ptr++];
+                        break;
+                    case opr_table["write"]:
+                        write_buf += stack[--T].toString() + '\n';
+                        break;
+                    case opr_table["+"]:
+                        b = stack[--T];
+                        a = stack[--T];
+                        stack[T++] = a + b;
+                        break;
+                    case opr_table["-"]:
+                        b = stack[--T];
+                        a = stack[--T];
+                        stack[T++] = a - b;
+                        break;
+                    case opr_table["*"]:
+                        b = stack[--T];
+                        a = stack[--T];
+                        stack[T++] = a * b;
+                        break;
+                    case opr_table["/"]:
+                        b = stack[--T];
+                        a = stack[--T];
+                        if (b == 0) {
+                            alert("整数被0除");
+                            shut_down = true;
+                            break;
+                        }
+                        stack[T++] = a / b;
+                        break;
+                    case opr_table["="]:
+                        b = stack[--T];
+                        a = stack[--T];
+                        stack[T++] = a === b;
+                        break;
+                    case opr_table["#"]:
+                        b = stack[--T];
+                        a = stack[--T];
+                        stack[T++] = a != b;
+                        break;
+                    case opr_table["<"]:
+                        b = stack[--T];
+                        a = stack[--T];
+                        stack[T++] = a < b;
+                        break;
+                    case opr_table["<="]:
+                        b = stack[--T];
+                        a = stack[--T];
+                        stack[T++] = a <= b;
+                        break;
+                    case opr_table[">"]:
+                        b = stack[--T];
+                        a = stack[--T];
+                        stack[T++] = a > b;
+                        break;
+                    case opr_table[">="]:
+                        b = stack[--T];
+                        a = stack[--T];
+                        stack[T++] = a >= b;
+                        break;
+                }
                 break;
         }
         if(T > 100){
