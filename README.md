@@ -58,5 +58,25 @@
 
 ## 运行效果与演示
 
+### index界面：
+    在该界面书写代码，写完点击提交按钮，进行下一步操作
+![image](https://github.com/zhangzuyuan/Compilation_principle/blob/master/image/index.png)
+
+### receive界面：
+    如果你的代码没有问题那么就会跳转到该界面
+![image](https://github.com/zhangzuyuan/Compilation_principle/blob/master/image/receive.png)
+
+### lexical界面：
+    这是词法分析界面，你可以看到词法分析相关结果
+![image](https://github.com/zhangzuyuan/Compilation_principle/blob/master/image/lexical.png)
+
+### parser界面：
+    这是语法分析界面，你可以看到语法分析相关结果
+![image](https://github.com/zhangzuyuan/Compilation_principle/blob/master/image/parser.png)
+
+### run界面：
+    这是生成了相关指令后的程序运行界面，可以一步步的运行程序
+![image](https://github.com/zhangzuyuan/Compilation_principle/blob/master/image/run.png)
+
 ## 致谢:
     xczhw 的帮助和设计思路的提供。
